@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  // WRAPPER
+  #wrapper
+
+    // API INPUT
+    fieldset
+      input#inputApiLocale(type="text", placeholder="API Address")
+      button#btnToGetData Get Data
+    // /API INPUT
+    #tableBox
+      h2 API JSON Response
+      // API LIST
+      #apiList
+        table
+          thead
+            th API
+            th Delete
+          tbody
+      // /API LIST
+      p#showAllRequests
+        a(href='') Show All Requests
+      // API INFO
+      #apiInfo
+        table
+          thead
+          tbody
+      // /API INFO
